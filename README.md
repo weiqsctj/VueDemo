@@ -1,26 +1,5 @@
-# vue_test
-## TodoList项目成功构建运行
-![TodoList项目成功构建运行](src/assets/TodoList项目成功构建运行.png)
-## 加上删除与编辑
-![加上删除与编辑](src/assets/加上删除与编辑.png)
-## 确定删除询问
-![确定删除询问](src/assets/确定删除询问.png)
-## 编辑功能实现
-![编辑功能实现](src/assets/编辑功能实现.png)
-## 点击完成任务
-![点击完成任务](src/assets/点击完成任务.png)
-## 一键全选
-![一键全选](src/assets/一键全选.png)
-## 清除所有已完成
-![清除所有已完成](src/assets/清除所有已完成.png)
-## 在vscode中写出的App.vue代码
-![在vscode中写出的App.vue代码](src/assets/在vscode中写出的App.vue代码.png)
-## main.js代码
-![main.js代码](src/assets/main.js代码.png)
-## myheader-myfooter-mylist-myitem四组件
-![myheader-myfooter-mylist-myitem四组件](src/assets/myheader-myfooter-mylist-myitem四组件.png)
-## Project setup
-```
+# VueDemo
+
 npm install
 ```
 ### Compiles and hot-reloads for development
