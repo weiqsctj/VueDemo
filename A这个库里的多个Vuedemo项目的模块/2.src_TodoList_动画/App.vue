@@ -83,10 +83,7 @@
 <style>
 	/*base*/
 	body {
-		background: rgb(252, 253, 253);
-	}
-	div{
-		margin-top: 20px;
+		background: #fff;
 	}
 	.btn {
 		display: inline-block;

@@ -8,7 +8,7 @@
 			leave-active-class="animate__backOutUp"
 		>
 			<h1 v-show="!isShow" key="1">你好啊！</h1>
-			<h1 v-show="isShow" key="2">尚硅谷！</h1>
+			<h1 v-show="isShow" key="2">薇莳萝！</h1>
 		</transition-group>
 	</div>
 </template>
