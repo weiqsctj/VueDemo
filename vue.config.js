@@ -2,7 +2,7 @@ module.exports = {
     pages: {
         index: {
           //入口
-          entry: 'src/main.js',
+        entry: 'src/main.js',
             // // page 的入口
             // entry: 'src/index/main.js',
             // // 模板来源
@@ -22,9 +22,9 @@ module.exports = {
         // 输出文件名会被推导为 `subpage.html`。
         // subpage: 'src/subpage/main.js'
     },
-    lintOnSave:false, //关闭语法检查
+    // lintOnSave:false, //关闭语法检查
     //开启粉色代理服务器
-    devServer: {
-      proxy: 'http://localhost:5000'
-    }
+    // devServer: {
+    //   proxy: 'http://localhost:5000'
+    // }
 }
