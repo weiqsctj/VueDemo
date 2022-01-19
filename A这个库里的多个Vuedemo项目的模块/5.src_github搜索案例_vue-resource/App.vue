@@ -3,7 +3,7 @@
 		<Search/>
 		<List/>
 	</div>
-</template>	
+</template>
 
 <script>
 	import Search from './components/Search'
@@ -13,4 +13,3 @@
 		components:{Search,List}
 	}
 </script>
-
