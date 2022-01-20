@@ -10,6 +10,7 @@
 <template>
 	<div class="row">
 		<!-- 展示用户列表 -->
+
 		<div v-show="info.users.length" class="card" v-for="user in info.users" :key="user.login">
 			<a :href="user.html_url" target="_blank">
 				<img :src="user.avatar_url" style='width: 100px'/>
@@ -53,12 +54,15 @@
 		padding-bottom: 3rem;
 		background-color: #f7f7f7;
 	}
-
+  .row{
+		margin-left: 150px;
+	}
 	.card {
-		float: left;
-		width: 33.333%;
-		padding: .75rem;
+		float:left;
+		width: 15%;
+		padding: .85rem;
 		margin-bottom: 2rem;
+		margin-top: 2rem;
 		border: 1px solid #efefef;
 		text-align: center;
 	}
@@ -70,5 +74,9 @@
 
 	.card-text {
 		font-size: 85%;
+	}
+	h1{
+		margin-right: 150px;
+		text-align: center;
 	}
 </style>

@@ -1,3 +1,12 @@
+<!--
+* @description 
+* @fileName Search.vue
+* @author weiqsctj-薇清时
+* @Email weiqsctj@126.com
+* @par 修改日志:
+* @version 版本:
+* @date 2022/01/20 13:55:43
+!-->
 <template>
 	<section class="jumbotron">
 		<h3 class="jumbotron-heading">Search Github Users</h3>
@@ -36,3 +45,15 @@
 		},
 	}
 </script>
+
+	<style scoped>
+		h3{
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 35px;
+			text-align: center;
+			/* margin-top: 10px; */
+		}
+		div{
+      text-align: center;
+		}
+	</style>

@@ -1,3 +1,12 @@
+<!--
+* @description 
+* @fileName List.vue
+* @author weiqsctj-薇清时
+* @Email weiqsctj@126.com
+* @par 修改日志:
+* @version 版本:
+* @date 2022/01/20 13:55:43
+!-->
 <template>
 	<div class="row">
 		<!-- 展示用户列表 -->
@@ -44,12 +53,15 @@
 		padding-bottom: 3rem;
 		background-color: #f7f7f7;
 	}
-
+  .row{
+		margin-left: 150px;
+	}
 	.card {
-		float: left;
-		width: 33.333%;
-		padding: .75rem;
+		float:left;
+		width: 15%;
+		padding: .85rem;
 		margin-bottom: 2rem;
+		margin-top: 2rem;
 		border: 1px solid #efefef;
 		text-align: center;
 	}
@@ -61,5 +73,9 @@
 
 	.card-text {
 		font-size: 85%;
+	}
+	h1{
+		margin-right: 150px;
+		text-align: center;
 	}
 </style>
