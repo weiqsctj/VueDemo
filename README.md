@@ -16,13 +16,18 @@
 
 ![github搜索案例](src/assets/github搜索案例2.gif)
 
-## 5.src_github 搜索案例\_vue-resource(A 这个库里)
+## 5.src_github 搜索案例 vue-resource(A 这个库里)
 
 ![github搜索案例_vue-resource](src/assets/github搜索案例3.gif)
 
-## 5.src_github 搜索案例\_vue-resource(A 这个库里)
+## 6.src_插槽(A 这个库里)
 
-![github搜索案例_vue-resource](src/assets/github搜索案例3.gif)
+### 1.src_默认插槽
+![1.src_默认插槽](src/assets/默认插槽.gif)
+### 2.src_具名插槽
+![2.src_具名插槽](src/assets/具名插槽.gif)
+### 3.src_作用域插槽
+![3.src_作用域插槽](src/assets/github搜索案例3.gif)
 
 npm install
 
