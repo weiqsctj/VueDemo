@@ -27,7 +27,7 @@
 ### 6.2.src_具名插槽
 ![6.2.src_具名插槽](src/assets/具名插槽.gif)
 ### 6.3.src_作用域插槽
-![6.3.src_作用域插槽](src/assets/github搜索案例3.gif)
+![6.3.src_作用域插槽](src/assets/具名插槽.gif)
 
 npm install
 
