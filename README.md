@@ -1,6 +1,6 @@
 # VueDemo
 
-## 1.src\_过度与动画(A 这个库里)
+## 1.src_过度与动画(A 这个库里)
 
 ![过度与动画](src/assets/动画.gif)
 
@@ -8,7 +8,7 @@
 
 ![TodoList_动画](src/assets/TodoList_动画.gif)
 
-## 3.src\_配置代理服务器(A 这个库里)
+## 3.src_配置代理服务器(A 这个库里)
 
 ![配置代理服务器](src/assets/github搜索案例1.gif)
 
