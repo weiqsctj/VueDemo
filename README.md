@@ -36,48 +36,42 @@
 
 npm install
 
-```
 ### Compiles and hot-reloads for development
-```
 
 npm run serve
 
-```
 ### Compiles and minifies for production
-```
 
 npm run build
 
-```
 ### Lints and fixes files
-```
 
 npm run lint
 
-````
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-# 笔记
+## 笔记
 
 ## 脚手架文件结构
 
-	├── node_modules
-	├── public
-	│   ├── favicon.ico: 页签图标
-	│   └── index.html: 主页面
-	├── src
-	│   ├── assets: 存放静态资源
-	│   │   └── logo.png
-	│   │── component: 存放组件
-	│   │   └── HelloWorld.vue
-	│   │── App.vue: 汇总所有组件
-	│   │── main.js: 入口文件
-	├── .gitignore: git版本管制忽略的配置
-	├── babel.config.js: babel的配置文件
-	├── package.json: 应用包配置文件
-	├── README.md: 应用描述文件
-	├── package-lock.json：包版本控制文件
+ ├── node_modules
+ ├── public
+ │   ├── favicon.ico: 页签图标
+ │   └── index.html: 主页面
+ ├── src
+ │   ├── assets: 存放静态资源
+ │   │   └── logo.png
+ │   │── component: 存放组件
+ │   │   └── HelloWorld.vue
+ │   │── App.vue: 汇总所有组件
+ │   │── main.js: 入口文件
+ ├── .gitignore: git版本管制忽略的配置
+ ├── babel.config.js: babel的配置文件
+ ├── package.json: 应用包配置文件
+ ├── README.md: 应用描述文件
+ ├── package-lock.json：包版本控制文件
 
 ## 关于不同版本的Vue
 
@@ -89,7 +83,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ## vue.config.js配置文件
 
 1. 使用vue inspect > output.js可以查看到Vue脚手架的默认配置。
-2. 使用vue.config.js可以对脚手架进行个性化定制，详情见：https://cli.vuejs.org/zh
+2. 使用vue.config.js可以对脚手架进行个性化定制，详情见：<https://cli.vuejs.org/zh>
 
 ## ref属性
 
@@ -107,7 +101,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 3. 接收数据：
 
-   1. 第一种方式（只接收）：```props:['name'] ```
+   1. 第一种方式（只接收）：```props:['name']```
 
    2. 第二种方式（限制类型）：```props:{name:String}```
 
@@ -115,13 +109,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
       ```js
       props:{
-      	name:{
-      	type:String, //类型
-      	required:true, //必要性
-      	default:'老王' //默认值
-      	}
+       name:{
+       type:String, //类型
+       required:true, //必要性
+       default:'老王' //默认值
+       }
       }
-````
 
 > 备注：props 是只读的，Vue 底层会监测你对 props 的修改，如果进行了修改，就会发出警告，若业务需求确实需要修改，那么请复制 props 的内容到 data 中一份，然后去修改 data 中的数据。
 
@@ -133,7 +126,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
    第一步定义混合：
 
-   ```
+
    {
        data(){....},
        methods:{....}
@@ -144,7 +137,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
    第二步使用混入：
 
    ​ 全局混入：`Vue.mixin(xxx)`
-   ​ 局部混入：`mixins:['xxx'] `
+   ​ 局部混入：`mixins:['xxx']`
 
 ## 插件
 
@@ -221,7 +214,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
       ​ 该方法接受一个键名作为参数，并把该键名从存储中删除。
 
-   4. ` xxxxxStorage.clear()`
+   4. `xxxxxStorage.clear()`
 
       ​ 该方法会清空存储中的所有数据。
 
@@ -270,10 +263,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
    ```js
    new Vue({
-   	......
-   	beforeCreate() {
-   		Vue.prototype.$bus = this //安装全局事件总线，$bus就是当前应用的vm
-   	},
+    ......
+    beforeCreate() {
+     Vue.prototype.$bus = this //安装全局事件总线，$bus就是当前应用的vm
+    },
        ......
    })
    ```
@@ -351,7 +344,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
       ```vue
       <transition name="hello">
-      	<h1 v-show="isShow">你好啊！</h1>
+       <h1 v-show="isShow">你好啊！</h1>
       </transition>
       ```
 
@@ -466,20 +459,20 @@ module.exports = {
          ```vue
          父组件中：
          <Category>
-         			<template scope="scopeData">
-         				<!-- 生成的是ul列表 -->
-         				<ul>
-         					<li v-for="g in scopeData.games" :key="g">{{g}}</li>
-         				</ul>
-         			</template>
-         		</Category>
+            <template scope="scopeData">
+             <!-- 生成的是ul列表 -->
+             <ul>
+              <li v-for="g in scopeData.games" :key="g">{{g}}</li>
+             </ul>
+            </template>
+           </Category>
 
          <Category>
-         			<template slot-scope="scopeData">
-         				<!-- 生成的是h4标题 -->
-         				<h4 v-for="g in scopeData.games" :key="g">{{g}}</h4>
-         			</template>
-         		</Category>
+            <template slot-scope="scopeData">
+             <!-- 生成的是h4标题 -->
+             <h4 v-for="g in scopeData.games" :key="g">{{g}}</h4>
+            </template>
+           </Category>
          子组件中：
          <template>
            <div>
@@ -552,9 +545,9 @@ module.exports = {
 
    //创建vm
    new Vue({
-   	el:'#app',
-   	render: h => h(App),
-   	store
+    el:'#app',
+    render: h => h(App),
+    store
    })
    ```
 
@@ -615,15 +608,15 @@ module.exports = {
    ......
 
    const getters = {
-   	bigSum(state){
-   		return state.sum * 10
-   	}
+    bigSum(state){
+     return state.sum * 10
+    }
    }
 
    //创建并暴露store
    export default new Vuex.Store({
-   	......
-   	getters
+    ......
+    getters
    })
    ```
 
@@ -879,21 +872,21 @@ module.exports = {
 
       ```js
       {
-      	path:'/demo',
-      	component:Demo,
-      	children:[
-      		{
-      			path:'test',
-      			component:Test,
-      			children:[
-      				{
+       path:'/demo',
+       component:Demo,
+       children:[
+        {
+         path:'test',
+         component:Test,
+         children:[
+          {
                             name:'hello' //给路由命名
-      					path:'welcome',
-      					component:Hello,
-      				}
-      			]
-      		}
-      	]
+           path:'welcome',
+           component:Hello,
+          }
+         ]
+        }
+       ]
       }
       ```
 
@@ -924,24 +917,24 @@ module.exports = {
 
    ```js
    {
-   	path:'/home',
-   	component:Home,
-   	children:[
-   		{
-   			path:'news',
-   			component:News
-   		},
-   		{
-   			component:Message,
-   			children:[
-   				{
-   					name:'xiangqing',
-   					path:'detail/:id/:title', //使用占位符声明接收params参数
-   					component:Detail
-   				}
-   			]
-   		}
-   	]
+    path:'/home',
+    component:Home,
+    children:[
+     {
+      path:'news',
+      component:News
+     },
+     {
+      component:Message,
+      children:[
+       {
+        name:'xiangqing',
+        path:'detail/:id/:title', //使用占位符声明接收params参数
+        component:Detail
+       }
+      ]
+     }
+    ]
    }
    ```
 
@@ -978,23 +971,23 @@ module.exports = {
 
 ```js
 {
-	name:'xiangqing',
-	path:'detail/:id',
-	component:Detail,
+ name:'xiangqing',
+ path:'detail/:id',
+ component:Detail,
 
-	//第一种写法：props值为对象，该对象中所有的key-value的组合最终都会通过props传给Detail组件
-	// props:{a:900}
+ //第一种写法：props值为对象，该对象中所有的key-value的组合最终都会通过props传给Detail组件
+ // props:{a:900}
 
-	//第二种写法：props值为布尔值，布尔值为true，则把路由收到的所有params参数通过props传给Detail组件
-	// props:true
+ //第二种写法：props值为布尔值，布尔值为true，则把路由收到的所有params参数通过props传给Detail组件
+ // props:true
 
-	//第三种写法：props值为函数，该函数返回的对象中每一组key-value都会通过props传给Detail组件
-	props(route){
-		return {
-			id:route.query.id,
-			title:route.query.title
-		}
-	}
+ //第三种写法：props值为函数，该函数返回的对象中每一组key-value都会通过props传给Detail组件
+ props(route){
+  return {
+   id:route.query.id,
+   title:route.query.title
+  }
+ }
 }
 ```
 
@@ -1006,7 +999,7 @@ module.exports = {
 
 ### 9.编程式路由导航
 
-1. 作用：不借助`<router-link> `实现路由跳转，让路由跳转更加灵活
+1. 作用：不借助`<router-link>`实现路由跳转，让路由跳转更加灵活
 
 2. 具体编码：
 
@@ -1092,17 +1085,17 @@ module.exports = {
 
    ```js
    beforeEnter(to,from,next){
-   	console.log('beforeEnter',to,from)
-   	if(to.meta.isAuth){ //判断当前路由是否需要进行权限控制
-   		if(localStorage.getItem('school') === 'weiqsctj'){
-   			next()
-   		}else{
-   			alert('暂无权限查看')
-   			// next({name:'guanyu'})
-   		}
-   	}else{
-   		next()
-   	}
+    console.log('beforeEnter',to,from)
+    if(to.meta.isAuth){ //判断当前路由是否需要进行权限控制
+     if(localStorage.getItem('school') === 'weiqsctj'){
+      next()
+     }else{
+      alert('暂无权限查看')
+      // next({name:'guanyu'})
+     }
+    }else{
+     next()
+    }
    }
    ```
 
