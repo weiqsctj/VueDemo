@@ -22,12 +22,17 @@
 
 ## 6.src_插槽(A 这个库里)
 
-### 6.1.src_默认插槽
-![6.1.src_默认插槽](src/assets/默认插槽.gif)
-### 6.2.src_具名插槽
-![6.2.src_具名插槽](src/assets/具名插槽.gif)
-### 6.3.src_作用域插槽
-![6.3.src_作用域插槽](src/assets/具名插槽.gif)
+### 6.1.默认插槽
+
+![src_默认插槽](src/assets/默认插槽.gif)
+
+### 6.2.具名插槽
+
+![src_具名插槽](src/assets/具名插槽.gif)
+
+### 6.3.作用域插槽
+
+![src_作用域插槽](src/assets/具名插槽.gif)
 
 npm install
 
