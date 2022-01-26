@@ -12,9 +12,9 @@
 		<Search/>
 		<List/>
 	</div>
-</template>
+</template>	
 
-<script>
+<script >
 	import Search from './components/Search'
 	import List from './components/List'
 	export default {
@@ -22,3 +22,8 @@
 		components:{Search,List}
 	}
 </script>
+
+<style scoped>
+
+</style>
+

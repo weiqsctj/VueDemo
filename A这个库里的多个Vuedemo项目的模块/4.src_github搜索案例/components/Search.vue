@@ -9,10 +9,20 @@
 !-->
 <template>
 	<section class="jumbotron">
+
 		<h3 class="jumbotron-heading">Search Github Users</h3>
+
 		<div>
-			<input type="text" placeholder="enter the name you search" v-model="keyWord"/>&nbsp;
+			<!-- 输入框 -->
+			<input 
+			type="text" 
+			placeholder="enter the name you search" 
+			
+			v-model="keyWord"/>&nbsp;
+			
+      <!-- search按钮 -->
 			<button @click="searchUsers">Search</button>
+
 		</div>
 	</section>
 </template>
@@ -46,14 +56,14 @@
 	}
 </script>
 
-	<style scoped>
-		h3{
-			font-family: 'Courier New', Courier, monospace;
-			font-size: 35px;
-			text-align: center;
-			/* margin-top: 10px; */
-		}
-		div{
-      text-align: center;
-		}
-	</style>
+<style scoped>
+	h3{
+		font-family: 'Courier New', Courier, monospace;
+		font-size: 35px;
+		text-align: center;
+		/* margin-top: 10px; */
+	}
+	div{
+		text-align: center;
+	}
+</style>

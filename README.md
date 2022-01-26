@@ -1,22 +1,26 @@
 # VueDemo
 
-## 1.src_过度与动画(A这个库里)
+## 1.src\_过度与动画(A 这个库里)
 
 ![过度与动画](src/assets/动画.gif)
 
-## 2.src_TodoList动画(A这个库里)
+## 2.src_TodoList 动画(A 这个库里)
 
 ![TodoList_动画](src/assets/TodoList_动画.gif)
 
-## 3.src_配置代理服务器(A这个库里)
+## 3.src\_配置代理服务器(A 这个库里)
 
 ![配置代理服务器](src/assets/github搜索案例1.gif)
 
-## 4.src_github搜索案例(A这个库里)
+## 4.src_github 搜索案例(A 这个库里)
 
 ![github搜索案例](src/assets/github搜索案例2.gif)
 
-## 5.src_github搜索案例_vue-resource(A这个库里)
+## 5.src_github 搜索案例\_vue-resource(A 这个库里)
+
+![github搜索案例_vue-resource](src/assets/github搜索案例3.gif)
+
+## 5.src_github 搜索案例\_vue-resource(A 这个库里)
 
 ![github搜索案例_vue-resource](src/assets/github搜索案例3.gif)
 

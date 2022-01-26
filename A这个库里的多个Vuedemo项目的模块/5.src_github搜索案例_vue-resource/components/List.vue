@@ -6,7 +6,7 @@
 * @par 修改日志:
 * @version 版本:
 * @date 2022/01/20 13:55:43
-!-->
+!--> 
 <template>
 	<div class="row">
 		<!-- 展示用户列表 -->
@@ -16,12 +16,14 @@
 			</a>
 			<p class="card-text">{{user.login}}</p>
 		</div>
+
 		<!-- 展示欢迎词 -->
 		<h1 v-show="info.isFirst">欢迎使用！</h1>
 		<!-- 展示加载中 -->
 		<h1 v-show="info.isLoading">加载中....</h1>
 		<!-- 展示错误信息 -->
 		<h1 v-show="info.errMsg">{{info.errMsg}}</h1>
+
 	</div>
 </template>
 
