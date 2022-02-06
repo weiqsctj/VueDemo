@@ -1,3 +1,12 @@
+<!--
+* @description 
+* @fileName App.vue
+* @author weiqsctj-薇清时
+* @Email weiqsctj@126.com
+* @par 修改日志:
+* @version 版本:
+* @date 2022/02/06 10:35:50
+!-->
 <template>
   <div class="container">
     <Category title="钟情的美食">

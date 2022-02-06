@@ -1,3 +1,12 @@
+<!--
+* @description 
+* @fileName Category.vue
+* @author weiqsctj-薇清时
+* @Email weiqsctj@126.com
+* @par 修改日志:
+* @version 版本:
+* @date 2022/02/06 10:35:08
+!-->
 <template>
 	<div class="category">
 		<h3>{{title}}分类</h3>
@@ -6,7 +15,7 @@
 </template>
 
 <script>
-	export default {
+	export default { 
 		name:'Category',
 		props:['title'],
 		data() {
