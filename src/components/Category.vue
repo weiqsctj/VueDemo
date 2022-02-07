@@ -7,22 +7,25 @@
 * @version 版本:
 * @date 2022/02/06 10:35:08
 !-->
+
 <template>
+<!-- 被vue.app使用 -->
 	<div class="category">
 		<h3>{{title}}分类</h3>
-		<slot :foods="foods" msg="hello">默认的一些内容</slot>
+		<slot :games="games" msg="hello">默认的一些内容</slot>
 	</div>
+
 </template>
 
 <script>
 	export default { 
 		name:'Category',
-		props:['title'],
+		// props:['title'],
 		data() {
 			return {
-				foods:['烧烤','酱鸡','烤鸭','牛排'],
+				// foods:['烧烤','酱鸡','烤鸭','牛排'],
 				games:['巫师3','方舟进化生存','荒野大镖客2','孤岛惊魂系列','战神5','猎人:荒野的召唤'],
-				films:['《教父》','《太阳照常升起》','《让子弹飞》','《3年A班》','《夏目友人帐》']
+				// films:['《教父》','《太阳照常升起》','《让子弹飞》','《3年A班》','《夏目友人帐》']
 			}
 		},
 	}
@@ -32,7 +35,7 @@
 	.category{
 		background-color: skyblue;
 		width: 200px;
-		height: 300px;
+		height: 400px;
 	}
 	h3{
 		text-align: center;

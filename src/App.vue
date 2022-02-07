@@ -9,16 +9,16 @@
 !-->
 <template>
 	<div class="container">
-
-		<Category title="钟情的美食">
+	<!--category.app里 props:['title']接受<Category title="钟情的美食">里title -->
+		<Category title="钟情">
 			<template scope="weiqsctj">
 				<ul>
-					<li v-for="(f,index) in weiqsctj.foods" :key="index">{{f}}</li>
+					<li v-for="(f,index) in weiqsctj.games" :key="index">{{f}}</li>
 				</ul>
 			</template>
 		</Category>
 
-		<Category title="喜欢的游戏">
+		<Category title="喜欢">
 			<template scope="{games}">
 				<ol>
 					<li style="color:red" v-for="(g,index) in games" :key="index">{{g}}</li>
@@ -26,7 +26,7 @@
 			</template>
 		</Category>
 
-		<Category title="好看的影片">
+		<Category title="好玩">
 			<template slot-scope="{games}">
 				<h4 v-for="(g,index) in games" :key="index">{{g}}</h4>
 			</template>

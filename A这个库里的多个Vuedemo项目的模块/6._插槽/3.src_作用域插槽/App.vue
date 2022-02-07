@@ -1,15 +1,24 @@
+<!--
+* @description 
+* @fileName App.vue
+* @author weiqsctj-薇清时
+* @Email weiqsctj@126.com
+* @par 修改日志:
+* @version 版本:
+* @date 2022/02/06 10:35:50
+!-->
 <template>
 	<div class="container">
 
-		<Category title="游戏">
-			<template scope="atguigu">
+		<Category title="钟情的美食">
+			<template scope="weiqsctj">
 				<ul>
-					<li v-for="(g,index) in atguigu.games" :key="index">{{g}}</li>
+					<li v-for="(f,index) in weiqsctj.foods" :key="index">{{f}}</li>
 				</ul>
 			</template>
 		</Category>
 
-		<Category title="游戏">
+		<Category title="喜欢的游戏">
 			<template scope="{games}">
 				<ol>
 					<li style="color:red" v-for="(g,index) in games" :key="index">{{g}}</li>
@@ -17,7 +26,7 @@
 			</template>
 		</Category>
 
-		<Category title="游戏">
+		<Category title="好看的影片">
 			<template slot-scope="{games}">
 				<h4 v-for="(g,index) in games" :key="index">{{g}}</h4>
 			</template>
@@ -36,6 +45,7 @@
 
 <style scoped>
 	.container,.foot{
+		margin-top: 50px;
 		display: flex;
 		justify-content: space-around;
 	}
