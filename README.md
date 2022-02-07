@@ -32,7 +32,7 @@
 
 ### 6.3.作用域插槽
 
-![src_作用域插槽](src/assets/具名插槽.gif)
+![src_作用域插槽](src/assets/作用域插槽.jpg)
 
 npm install
 

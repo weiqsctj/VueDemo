@@ -20,7 +20,7 @@
 <script>
 	export default { 
 		name:'Category',
-		// props:['title'],
+		props:['title'],
 		data() {
 			return {
 				// foods:['烧烤','酱鸡','烤鸭','牛排'],
