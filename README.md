@@ -34,6 +34,11 @@
 
 ![src_作用域插槽](src/assets/作用域插槽.jpg)
 
+## 7.src_求和案例_纯vue版(A 这个库里)
+
+![src_作用域插槽](src/assets/求和案例_纯vue版.gif)
+
+
 npm install
 
 ### Compiles and hot-reloads for development
