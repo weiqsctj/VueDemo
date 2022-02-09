@@ -36,7 +36,11 @@
 
 ## 7.src_求和案例_纯vue版(A 这个库里)
 
-![src_作用域插槽](src/assets/求和案例_纯vue版.gif)
+![求和案例_纯vue版](src/assets/求和案例_纯vue版.gif)
+
+## 8.src_求和案例_vuex版(A 这个库里)
+
+![求和案例_vuex版](src/assets/求和案例_vuex版.gif)
 
 
 npm install

@@ -15,32 +15,30 @@
 
 <script>
 export default {
-  name: 'Count',
-  data() {
-    return {
-      n: 1, //用户选择的数字
-      sum: 0, //当前的和
-    }
-  },
-  methods: {
-    increment() {
-      this.sum += this.n
-    },
-    decrement() {
-      this.sum -= this.n
-    },
-    incrementOdd() {
-      if (this.sum % 2) {
-        this.sum += this.n
-      }
-    },
-    incrementWait() {
-      setTimeout(() => {
-        this.sum += this.n
-      }, 500)
-    },
-  },
-}
+		name:'Count',
+		data() {
+			return {
+				n:1, //用户选择的数字
+			}
+		},
+		methods: {
+			increment(){
+				this.$store.commit('JIA',this.n)
+			},
+			decrement(){
+				this.$store.commit('JIAN',this.n)
+			},
+			incrementOdd(){
+				this.$store.dispatch('jiaOdd',this.n)
+			},
+			incrementWait(){
+				this.$store.dispatch('jiaWait',this.n)
+			},
+		},
+		mounted() {
+			console.log('Count',this)
+		},
+	}
 </script>
 
 <style lang="css">
