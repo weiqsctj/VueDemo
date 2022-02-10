@@ -42,7 +42,20 @@
 </script>
 
 <style lang="css">
-	button{
+	body {
+		background: url(../assets/347.jpg);
+		background-size: cover;
+		position: relative;
+	}
+	div {
+		text-align: center;
+		margin-top: 200px;
+	}
+	button {
 		margin-left: 5px;
+		font-size: 25px;
+	}
+	select {
+		font-size: 25px;
 	}
 </style>
