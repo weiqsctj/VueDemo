@@ -19,5 +19,5 @@ new Vue({
 	store,
 	beforeCreate() {
 		Vue.prototype.$bus = this
-	},
+	}
 })
