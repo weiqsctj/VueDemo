@@ -40,7 +40,7 @@
 
 ## 8.src_求和案例_vuex版(A 这个库里)
 
-![求和案例_vuex版](src/assets/求和案例_vuex版.gif)
+![求和案例_vuex版](src/assets/求和案例_纯vue版.gif)
 
 
 npm install
