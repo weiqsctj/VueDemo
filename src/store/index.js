@@ -1,20 +1,20 @@
 //该文件用于创建Vuex中最为核心的store
 import Vue from 'vue'
 //引入Vuex
-import Vuex from 'vuex'
+import Vuex from 'Vuex'
 //使用Vuex插件
 Vue.use(Vuex)
 
 //准备actions——用于响应组件中的动作
 const actions = {
-  jia(context,value){
-		console.log('actions中的jia被调用了')
-		context.commit('JIA',value)
-	},
-	jian(context,value){
-		console.log('actions中的jian被调用了')
-		context.commit('JIAN',value)
-	},
+  // jia(context,value){
+	// 	console.log('actions中的jia被调用了')
+	// 	context.commit('JIA',value)
+	// },
+	// jian(context,value){
+	// 	console.log('actions中的jian被调用了')
+	// 	context.commit('JIAN',value)
+	// },
 	jiaOdd(context,value){
 		console.log('actions中的jiaOdd被调用了')
 		if(context.state.sum % 2){
