@@ -42,6 +42,10 @@
 
 ![求和案例_vuex版](src/assets/求和案例_纯vue版.gif)
 
+## 13.src_element-ui组件库(A 这个库里)
+
+![element-ui组件库]()
+
 
 npm install
 
